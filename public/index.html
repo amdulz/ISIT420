@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Comic Collection</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<h2>Comic Collection</h2>
+<div class="grid-container">
+   
+
+
+<div  class="grid-item">
+    <h3>Existing Comics</h3>
+    <button type="button" id=get>Show Existing</button>
+    <ul id="listUl"></ul>
+</div>
+   
+   
+   
+   
+    <div  class="grid-item">
+        <h3>Add a new Comic</h3>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="fname"><br><br>
+        <label for="publisher">Publisher:</label>
+        <input type="text" id="publisher" name="fname"><br><br>
+        <label for="rating">Rating:</label>
+        <input type="text" id="rating" name="fname"><br><br>
+        <button type="button" id=submit>SUBMIT</button>
+       
+    </div>
+
+   
+
+    <div  class="grid-item">
+        <h3>Delete Comic by Title</h3>
+        <div>
+            Enter Title here:  <input type="text" id="deleteTitle"><br><br>
+            <button type="button" id=delete>DELETE</button><br>
+        </div>
+    </div>
+
+   
+    <div  class="grid-item">
+        <h3>Edit one Comic </h3>
+        <div>
+            Enter Title here:  <input type="text" id="modTitle"><br><br>
+            <button type="button" id=find>FIND</button><br>
+        </div>
+        <div>
+            <h3>Edit these fields</h3>
+        <input type="text" id="mtitle" name="fname"><br><br>
+        <input type="text" id="mpublisher" name="fname"><br><br>
+        <input type="text" id="mrating" name="fname"><br><br>
+        <button type="button" id=msubmit>SUBMIT</button>
+        </div>
+   
+    </div>
+</div>
+
+<script src="/javascripts/index.js"></script>
+</body>
+
+</html>
